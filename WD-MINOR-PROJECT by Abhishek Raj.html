@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .header {
+            padding: 20px;
+            width: 100%;
+            background-color: #9600FF;
+            position: fixed;
+            background-image: linear-gradient(45deg, #9600FF, #AEBAF8);
+            font-family: 'Roboto', sans-serif;
+            color:rgba(250, 252, 253, 0.932);
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+            top: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            gap: 10px 0px;
+        }
+        .grid-item {
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;  
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            color:rgba(250, 252, 253, 0.932);
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+        }
+        a:hover {
+            color: green;
+        }
+        img {
+            border-radius: 100px;
+            animation: circle 3s infinite;
+            clip-path: circle(75%);
+        }
+        @keyframes circle {
+         0% { clip-path: circle(100%); }
+         50% { clip-path: circle(40%); }
+         100% { clip-path: circle(100%); }
+         }
+        @media only screen and (max-width: 1250px) {
+            .grid-container {
+                grid-template-columns: auto auto;
+            }
+        }
+        @media only screen and (max-width: 870px) {
+            .grid-container {
+                grid-template-columns: auto;
+            }
+        }
+        .footer {
+            bottom: 0;
+            padding: 20px;
+            background-color: #9600FF;
+            background-image: linear-gradient(45deg, #9600FF, #AEBAF8);
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color:rgba(250, 252, 253, 0.932);
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+            position: fixed;
+        }
+            body{
+            background-image:linear-gradient(120deg,#a8abad, #b5d1ee,#B2FEFA, #0ED2F7);
+            
+            background-attachment: fixed;
+            background-size: 100%,100%;}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <p style="text-align:center ; font-size: 32px; ">
+          <b>  Historical Places in India</b>
+        </p>
+    </div>
+    <br><br><br><br>
+    <!-- Body -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Stupa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Stupa_1%2C_Sanchi_02.jpg/370px-Stupa_1%2C_Sanchi_02.jpg"
+                    alt="">
+                <p>Sanchi Stupa</p>
+            </a> 
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Golden_Temple">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/370px-The_Golden_Temple_of_Amrithsar_7.jpg"
+                    alt="">
+                <p>Golden Temple </p>
+            </a>
+        </div>
+        <div class="grid-item">
+            
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/370px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg"
+                    alt="">
+                <p>Taj mahal</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Red_Fort">
+                <img src="https://images.thrillophilia.com/image/upload/s--BysGU3M4--/c_fill,g_center,h_300,q_auto,w_370/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/383/701/original/1651646427_shutterstock_418380280.jpg.jpg"
+                    alt="">
+                <p>Red Fort</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Hawa_Mahal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Hawa_Mahal_east_facade_%2814-07-2022%29.jpg/370px-Hawa_Mahal_east_facade_%2814-07-2022%29.jpg"
+                    alt="">
+                <p>Hawa Mahal</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Khajuraho_Group_of_Monuments_4.jpg/370px-Khajuraho_Group_of_Monuments_4.jpg"
+                    alt="">
+                <p>Khajuraho Group of Monuments</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">
+                <img src="https://images.thrillophilia.com/image/upload/s--DB8LV1Y9--/c_fill,g_center,h_300,q_auto,w_370/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/383/705/original/1651647391_shutterstock_1100136929.jpg.jpg"
+                    alt="">
+                <p>Victoria Memorial</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Qutb_Minar">
+                <img src="https://images.thrillophilia.com/image/upload/s--TdiMNCde--/c_fill,g_center,h_300,q_auto,w_370/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/383/702/original/1651646655_shutterstock_441171835.jpg.jpg"
+                    alt="">
+                <p>Qutub Minar</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Ajanta_Caves">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/370px-Ajanta_%2863%29.jpg"
+                    alt="">
+                <p>Ajanta & Ellora Caves</p>
+            </a>
+        </div>
+    </div>
+    <div style="text-align:center">
+        <div class="audio">
+            <audio
+                src="https://top10ringtone.com/wp-content/uploads/2021/01/jan-gan-man-song-mp3-52-seconds-download-Original.mp3"
+                controls>
+            </audio>
+            </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- Footer -->
+    <div class="footer">
+        <p style="text-align:center ; font-size: 20px; ">
+           <b> Thank You
+            <br>
+            Designed And Developed By:- Abhishek Raj.</b>
+        </p>
+    </div>
+</body>
+</html>
